@@ -69,7 +69,7 @@ def on_internet_available(agent):
         handshake_new = set(handshake_paths) - set(ALREADY_UPLOADED)
 
         if handshake_new:
-            logging.info("OHC: Internet connectivity detected. Uploading new handshakes to onelinehashcrack.com")
+            logging.info("OHC: Internet connectivity detected. Uploading new handshakes to onlinehashcrack.com")
 
             for idx, handshake in enumerate(handshake_new):
                 display.set('status', f"Uploading handshake to onlinehashcrack.com ({idx + 1}/{len(handshake_new)})")
